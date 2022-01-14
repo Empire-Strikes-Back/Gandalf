@@ -15,6 +15,12 @@ jess_os(){
     java -classpath ./target/jess.jar jess.Main "$@"
 }
 
+run_scheme(){
+  scheme
+
+  # (load "src/Gandalf/little-schemer.scm")
+}
+
 # bash program.sh jess src/Gandalf/jess-in-action-1-rosencrantz.clp
 
 download_jess(){
