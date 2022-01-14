@@ -1,0 +1,49 @@
+
+[{:input-answer         "Computational complexity theory is a branch of the theory of computation in theoretical computer science that focuses on classifying computational problems according to their inherent difficulty, and relating those classes to each other. A computational problem is understood to be a task that is in principle amenable to being solved by a computer, which is equivalent to stating that the problem may be solved by mechanical application of mathematical steps, such as an algorithm."
+  :input-question       "By what main attribute are computational problems classified utilizing computational complexity theory?"
+  :ground-truth-answers ["Computational complexity theory"
+                         "Computational  complexity theory"
+                         "complexity theory"]}
+ {:input-answer         "Steam engines are external combustion engines, where the working fluid is separate from the combustion products. Non-combustion heat sources such as solar power, nuclear power or geothermal energy may be used. The ideal thermodynamic cycle used to analyze this process is called the Rankine cycle. In the cycle, water is heated and transforms into steam within a boiler operating at a high pressure. When expanded through pistons or turbines, mechanical work is done. The reduced-pressure steam is then condensed and pumped back into the boiler."
+  :input-question       "Along with geothermal and nuclear, what is a notable non-combustion heat source?"
+  :ground-truth-answers ["solar"
+                         "solar power"
+                         "solar power, nuclear power or geothermal energysolar"]}
+ {:input-answer         "In the 1960s, a series of discoveries, the most important of which was seafloor spreading, showed that the Earth's lithosphere, which includes the crust and rigid uppermost portion of the upper mantle, is separated into a number of tectonic plates that move across the plastically deforming, solid, upper mantle, which is called the asthenosphere. There is an intimate coupling between the movement of the plates on the surface and the convection of the mantle: oceanic plate motions and mantle convection currents always move in the same direction, because the oceanic lithosphere is the rigid upper thermal boundary layer of the convecting mantle. This coupling between rigid plates moving on the surface of the Earth and the convecting mantle is called plate tectonics."
+  :input-question       "What was the most important discovery that led to the understanding that Earth's lithosphere is separated into tectonic plates?"
+  :ground-truth-answers ["seafloor spreading"]}
+ ;;; totally made up
+ {:input-answer         "Susan had a cat named Sammy when she lived in the green house."
+  :input-question       "What was Susan's cat named?"
+  :ground-truth-answers ["Sammy" "sammy"]}
+ ;;; more or less from wikipedia on clojure
+ {:input-answer         "Rich Hickey is the creator of the Clojure language. Before Clojure, he developed dotLisp, a similar project based on the .NET platform, and three earlier attempts to provide interoperability between Lisp and Java: a Java foreign language interface for Common Lisp, A Foreign Object Interface for Lisp, and a Lisp-friendly interface to Java Servlets."
+  :input-question       "Who created Clojure?"
+  :ground-truth-answers ["rich" "hickey"]}
+
+ {:input-answer         "The Hobbit is a film series consisting of three high fantasy adventure films directed by Peter Jackson. They are based on the 1937 novel The Hobbit by J. R. R. Tolkien, with large portions of the trilogy inspired by the appendices to The Return of the King, which expand on the story told in The Hobbit, as well as new material and characters written especially for the films. Together they act as a prequel to Jackson's The Lord of the Rings film trilogy. The films are subtitled An Unexpected Journey (2012), The Desolation of Smaug (2013), and The Battle of the Five Armies (2014) . [4]
+
+The screenplay was written by Fran Walsh, Philippa Boyens, Jackson, and Guillermo del Toro, who was originally chosen to direct before his departure from the project. The films take place in the fictional world of Middle-earth sixty years before the beginning of The Lord of the Rings, and follow hobbit Bilbo Baggins (Martin Freeman), who is convinced by the wizard Gandalf the Grey (Ian McKellen) to accompany thirteen dwarves, led by Thorin Oakenshield (Richard Armitage), on a quest to reclaim the Lonely Mountain from the dragon Smaug (voiced by Benedict Cumberbatch) . The films also expand upon certain elements from the novel and other source material, such as Gandalf's investigation at Dol Guldur, and the pursuit of Azog and Bolg, who seek vengeance against Thorin and his kindred."
+  :input-question       "Who directed Hobbit film series ?"
+  :ground-truth-answers ["peter" "jackson"]}
+
+ {:input-answer         "The 2005 UEFA Champions League Final was the final match of the 2004–05 UEFA Champions League, Europe's primary club football competition. The showpiece event was contested between Liverpool of England and Milan of Italy at the Atatürk Stadium in Istanbul, Turkey on 25 May 2005. Liverpool, who had won the competition four times, were appearing in their sixth final, and their first since 1985. Milan, who had won the competition six times, were appearing in their second final in three years and tenth overall.
+
+Each club needed to progress through the group stage and knockout rounds to reach the final, playing 12 matches in total. Liverpool finished second in their group behind 2004 runners-up AS Monaco and subsequently beat Bayer Leverkusen, Juventus and Chelsea to progress to the final. Milan won their group ahead of Barcelona and faced Manchester United, Internazionale and PSV Eindhoven before reaching the final.
+
+Milan were regarded as favourites before the match and took the lead within the first minute through captain Paolo Maldini. Milan striker Hernán Crespo added two more goals before half-time to make it 3–0. In the second half Liverpool launched a comeback and scored three goals in a dramatic six-minute spell to level the scores at 3–3, with goals from Steven Gerrard, Vladimír Šmicer and Xabi Alonso. The scores remained the same during extra time, and a penalty shoot-out was required to decide the champions. The score was 3–2 to Liverpool when Andriy Shevchenko's penalty was saved by Liverpool goalkeeper Jerzy Dudek. Thus Liverpool won their fifth European Cup, were awarded the trophy permanently, and claimed a multiple-winner badge. Liverpool's comeback gave rise to the final being known as the Miracle of Istanbul, and is regarded as one of the greatest finals in the history of the tournament.[4][5]"
+  :input-question       "Which team won the  2005 UEFA Champions League Final ?"
+  :ground-truth-answers ["liverpool"]}
+ 
+ 
+  {:input-answer         "A plant-based diet is a diet consisting mostly or entirely of foods derived from plants, including vegetables, grains, nuts, seeds, legumes and fruits, and with few or no animal products.[1][2][3] Historically, it was explained that[a] plant-based diet is not necessarily a vegetarian diet
+   as                    any people on plant-based diets continue to use meat products and/or fish but in smaller quantities.[2] The use of the phrase plant-based has changed over time, and examples can be found of the phrase plant-based diet being used to refer to vegan diets, which contain no food from animal sources, to vegetarian diets which include eggs and dairy but no meat, and to diets with varying amounts of animal-based foods, such as semi-vegetarian diets which contain small amounts of meat.[2][4] The Academy of Nutrition and Dietetics issued a position statement proposing that well-planned plant diets support health and are appropriate throughout life, including pregnancy, lactation, childhood, adulthood, and for athletes.[5]
+
+A 2017 review of clinical research on the dietary patterns of people with type 2 diabetes stated that the kinds of carbohydrates (unrefined versus refined), fats (monounsaturated and polyunsaturated versus saturated and trans), and protein (plant versus animal) in a plant-based diet have significant roles in lowering the risk and managing diabetes and other diseases, such as cardiovascular disorders, obesity, and cancer.[6]
+
+As of the early 2000s, it was estimated that four billion people live primarily on a plant-based diet, some because of limits caused by shortages of cropland, freshwater, and energy resources.[7][8] A plant-based diet has been accepted by the American Dietetics Association, as being nutritionally adequate at all stages of life, including during pregnancy, infancy, as well as for athletes."
+   :input-question       "What is the source of protein on a plant-based diet?"
+   :ground-truth-answers ["plants"]}
+ 
+ ;
+ ]

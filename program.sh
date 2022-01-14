@@ -7,18 +7,22 @@ repl(){
 
 jess(){
     # java -classpath /opt/jess.jar jess.Main
-    java -classpath /opt/Jess61p4/jess.jar jess.Main "$@"
+    java -classpath ./target/Jess61p4/jess.jar jess.Main "$@"
 }
 
 jess_os(){
     # java -classpath /opt/jess.jar jess.Main
-    java -classpath jess.jar jess.Main "$@"
+    java -classpath ./target/jess.jar jess.Main "$@"
 }
 
+# bash program.sh jess src/Gandalf/jess-in-action-1-rosencrantz.clp
+
 download_jess(){
-    curl -O https://manning-content.s3.amazonaws.com/download/e/839f142-236f-4866-8693-abf06add86de/friedman-hill_src_1_jess_se.zip && \
-    unzip friedman-hill_src_1_jess_se.zip && \
-    cp Jess61p4/jess.jar jess.jar
+    curl -O https://manning-content.s3.amazonaws.com/download/e/839f142-236f-4866-8693-abf06add86de/friedman-hill_src_1_jess_se.zip
+    unzip friedman-hill_src_1_jess_se.zip
+    mv Jess61p4 ./target
+    mv friedman-hill_src_1_jess_se.zip ./target
+    cp target/Jess61p4/jess.jar target/jess.jar
 }
 
 

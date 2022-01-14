@@ -1,4 +1,4 @@
-(defproject csbooks "0.1.0"
+(defproject Gandalf "0.1.0"
 
   :repositories [["conjars" {:url "https://conjars.org/repo"}]
                  ["clojars" {:url "https://clojars.org/repo"}]
@@ -30,16 +30,17 @@
                  [commons-io/commons-io "2.4"]
                  [clj-http "3.10.0"]
                  [cheshire "5.8.1"]
-
+                 [org.clojure/core.logic "1.0.0"]
+                 
                  [t6/from-scala "0.3.0"]
-
-                 [org.apache.mxnet/mxnet-full_2.11-linux-x86_64-cpu "1.5.0-SNAPSHOT"]
+                 [org.apache.mxnet.contrib.clojure/clojure-mxnet-linux-cpu "1.5.0"]
+                 #_[org.apache.mxnet/mxnet-full_2.11-linux-x86_64-cpu "1.5.0-SNAPSHOT"]
 
                  ;
                  ]
 
-  :repl-options {:init-ns          main
-                 :main             main
+  :repl-options {:init-ns          Gandalf.main
+                ;;  :main             Gandalf.main
                  :host             "0.0.0.0"
                  :port             4001
                  :nrepl-middleware [cider.nrepl/wrap-apropos
@@ -64,18 +65,18 @@
                                     cider.nrepl/wrap-version]
                 ;  :nrepl-middleware [cider.piggieback/wrap-cljs-repl]
                  }
-  :profiles {:dev  {:main         ^{:skip-aot true}  main
+  :profiles {:dev  {:main         ^{:skip-aot true}  Gandalf.main
                     :aot          nil ;[dev ]
-                    :aliases      {"dev" ["trampoline" "run" "-m" "main/-dev"]}
+                    :aliases      {"dev" ["trampoline" "run" "-m" "Gandalf.main/-dev"]}
                     :dependencies []}
 
-             :prod ^:leaky {:main main
+             :prod ^:leaky {:main Gandalf.main
                                 ;  :uberjar-name "wordcount-standalone.jar"
                                 ;  :jar-name     "wordcount.jar"
-                            :aot  [main]}}
+                            :aot  [Gandalf.main]}}
 
 
-  :main ^{:skip-aot true} main
+  :main ^{:skip-aot true} Gandalf.main
   :jvm-opts ["-Xms768m" "-Xmx2048m" "-Xmx1g"]
   ; :javac-opts ["-target" "1.8" "-source" "1.8"]
 
@@ -89,7 +90,4 @@
 
   :source-paths ["src"]
   :java-source-paths ["src"]  ; Java source is stored separately.
-  :test-paths ["test"]
-  :resource-paths ["resources"]
-
   :auto-clean false)
